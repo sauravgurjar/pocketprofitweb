@@ -106,7 +106,7 @@ h1,
 .container .right .mainInfo {
   -webkit-box-flex: 1;
   -ms-flex: 1;
-  flex: 1;
+  flex: 0.5;
 }
 
 @media screen and (max-width: 576px) {
@@ -128,7 +128,7 @@ h1,
 
 .container .right .mainInfo .slogan {
   width: 50vw;
-  margin-top: 1.5em;
+  margin-top: 0.5em;
   color: #6d6464;
 }
 
@@ -291,6 +291,7 @@ button,
   justify-content: center;
   background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
   border-radius: 30px;
+  margin-left: 1em;
   overflow: hidden;
   cursor: pointer;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
@@ -360,7 +361,13 @@ button:hover {
 
 .paddingData {
   width: 100vw;
+  margin-left: 1em;
+  color: black;
+
+}
+.paddingDataP {
+  margin-bottom: 0;
   margin-top: 1.5em;
-  margin-left: 1.5em;
+  margin-left: 2.5em;
   color: black;
 }
