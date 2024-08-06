@@ -80,10 +80,10 @@ const Header: React.FC = () => {
             {state.isMenuOpen && (
                 <div className="sm:hidden absolute top-full left-0 w-full bg-white shadow-md">
                     <ul className="flex flex-col items-center py-4">
-                        <li className="py-2"><a href="#" className="hover:text-gray-300">Home</a></li>
-                        <li className="py-2"><a href="#" className="hover:text-gray-300">About</a></li>
-                        <li className="py-2"><a href="#" className="hover:text-gray-300">Services</a></li>
-                        <li className="py-2"><a href="#" className="hover:text-gray-300">Contact</a></li>
+                        <li className="py-2"><span className="hover:text-gray-300 cursor-pointer">Home</span></li>
+                        <li className="py-2"><span className="hover:text-gray-300 cursor-pointer">About</span></li>
+                        <li className="py-2"><span className="hover:text-gray-300 cursor-pointer">Services</span></li>
+                        <li className="py-2"><span className="hover:text-gray-300 cursor-pointer">Contact</span></li>
                     </ul>
                 </div>
             )}
