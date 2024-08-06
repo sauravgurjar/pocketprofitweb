@@ -56,7 +56,6 @@ const Header: React.FC = () => {
                     )}
                 </button>
 
-                {/* Navigation always visible on screens sm and above */}
                 <ul className="hidden sm:flex space-x-4">
                     <li>
                         <button className="relative px-8 py-2 rounded-xl bg-white isolation-auto z-10 border-2 border-lime-500
