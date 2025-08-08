@@ -21,7 +21,7 @@ const WhyUsSection: React.FC = () => {
                 All these serves are easy for you just one touch
             </p>
             <Stats/>
-            <FeatureSection/>
+            {/*<FeatureSection/>*/}
         </section>
     );
 };
