@@ -32,8 +32,12 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "jsx-a11y/anchor-is-valid": "warn"
+    }
   },
+
   "browserslist": {
     "production": [
       ">0.2%",
