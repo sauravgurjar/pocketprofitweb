@@ -42,11 +42,11 @@ const Header: React.FC = () => {
 
     };
 
-    const handleServicesClick = () => {
-        navigate('/')
-        console.log('Services clicked');
-        // Add your services navigation logic here
-        // e.g., navigate('/services') or scrollTo('#services')
+    const handleCalculateSIPClick = () => {
+        navigate('/calculator')
+        console.log('calculateSIP clicked');
+        // Add your calculateSIP navigation logic here
+        // e.g., navigate('/calculateSIP') or scrollTo('#calculateSIP')
     };
 
     const handleContactClick = () => {
@@ -104,9 +104,9 @@ const Header: React.FC = () => {
                     </li>
                     <li>
                         <button
-                            onClick={handleServicesClick}
+                            onClick={handleCalculateSIPClick}
                             className="relative px-8 py-2 rounded-xl bg-white isolation-auto z-10 border-2 border-lime-500
-        before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-lime-500 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700">Services
+        before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-lime-500 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700">calculateSIP
                         </button>
                     </li>
                     <li>
@@ -142,9 +142,9 @@ const Header: React.FC = () => {
                         <li className="py-2">
                             <span
                                 className="hover:text-gray-300 cursor-pointer"
-                                onClick={handleServicesClick}
+                                onClick={handleCalculateSIPClick}
                             >
-                                Services
+                                calculateSIP
                             </span>
                         </li>
                         <li className="py-2">

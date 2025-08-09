@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {Landing} from "./comp/landing_page";
 import AboutPage from "./about/about";
 import PageInProgress from "./comp/mintancesite/progresspage";
+import SIPCalculator from "./comp/sip_calcutor/sip";
+
 
 function App() {
     return (
@@ -15,6 +17,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Landing />} />
                     <Route path="/about" element={<AboutPage />} />
+                    <Route path="/calculator" element={<SIPCalculator />} />
                     <Route path="/PageInProgress" element={<PageInProgress />} />
                     <Route path="*" element={
                         <div className="min-h-screen flex items-center justify-center">

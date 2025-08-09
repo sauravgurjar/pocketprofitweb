@@ -36,10 +36,10 @@ export default function AboutPage() {
 
     const team = [
         {
-            name: 'Robert Williams',
+            name: 'saurav singh',
             role: 'Chief Investment Officer',
             image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face',
-            bio: 'Expert portfolio manager with 20+ years in mutual fund strategies and market analysis.'
+            bio: 'Expert portfolio manager with 5+ years in mutual fund strategies and market analysis.'
         }
     ];
 
