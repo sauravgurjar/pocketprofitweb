@@ -44,7 +44,7 @@ export default function AboutPage() {
     ];
 
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-white pt-16">
             {/* Hero Section */}
             <section className="py-16 px-6 bg-gray-50">
                 <div className="max-w-6xl mx-auto">

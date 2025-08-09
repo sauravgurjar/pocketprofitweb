@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../assets/loga.png';
+import { useNavigate } from 'react-router-dom';
 
 
 interface HeaderState {
@@ -21,13 +22,14 @@ const Header: React.FC = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
+    const navigate = useNavigate();
     const toggleMenu = () => {
         setState((prevState) => ({ ...prevState, isMenuOpen: !prevState.isMenuOpen }));
     };
 
-    // Navigation handlers
+    // Navigation handler
     const handleHomeClick = () => {
+
         console.log('Home clicked');
         // Add your home navigation logic here
         // e.g., navigate('/') or scrollTo('#home')
@@ -35,6 +37,7 @@ const Header: React.FC = () => {
 
     const handleAboutClick = () => {
         console.log('About clicked');
+        navigate('/about')
 
     };
 
