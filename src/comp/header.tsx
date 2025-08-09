@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../assets/loga.png';
 
+
 interface HeaderState {
     isScrolled: boolean;
     isMenuOpen: boolean;
@@ -34,8 +35,7 @@ const Header: React.FC = () => {
 
     const handleAboutClick = () => {
         console.log('About clicked');
-        // Add your about navigation logic here
-        // e.g., navigate('/about') or scrollTo('#about')
+
     };
 
     const handleServicesClick = () => {

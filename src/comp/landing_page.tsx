@@ -2,7 +2,6 @@ import LandingPage from "./mainfile";
 import Header from "./header";
 import WhyUsSection from "./secondheader";
 import {MarqueeDemo} from "./marque";
-import Footer from "./footer";
 
 
 export function Landing(){
@@ -12,7 +11,6 @@ export function Landing(){
             <Header/>
             <WhyUsSection/>
             <MarqueeDemo/>
-            <Footer/>
         </div>
     )
 }
