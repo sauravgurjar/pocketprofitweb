@@ -29,25 +29,28 @@ const Header: React.FC = () => {
 
     // Navigation handler
     const handleHomeClick = () => {
-
+        navigate('/')
         console.log('Home clicked');
         // Add your home navigation logic here
         // e.g., navigate('/') or scrollTo('#home')
     };
 
     const handleAboutClick = () => {
-        console.log('About clicked');
         navigate('/about')
+        console.log('About clicked');
+
 
     };
 
     const handleServicesClick = () => {
+        navigate('/')
         console.log('Services clicked');
         // Add your services navigation logic here
         // e.g., navigate('/services') or scrollTo('#services')
     };
 
     const handleContactClick = () => {
+        navigate('/')
         console.log('Contact clicked');
         // Add your contact navigation logic here
         // e.g., navigate('/contact') or scrollTo('#contact')
