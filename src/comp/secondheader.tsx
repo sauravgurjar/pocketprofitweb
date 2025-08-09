@@ -1,5 +1,4 @@
 import React from 'react';
-import FeatureSection from "./button/Boxes";
 import Stats from "./static_deatisl";
 
 const WhyUsSection: React.FC = () => {

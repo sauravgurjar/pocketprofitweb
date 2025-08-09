@@ -25,6 +25,31 @@ const Header: React.FC = () => {
         setState((prevState) => ({ ...prevState, isMenuOpen: !prevState.isMenuOpen }));
     };
 
+    // Navigation handlers
+    const handleHomeClick = () => {
+        console.log('Home clicked');
+        // Add your home navigation logic here
+        // e.g., navigate('/') or scrollTo('#home')
+    };
+
+    const handleAboutClick = () => {
+        console.log('About clicked');
+        // Add your about navigation logic here
+        // e.g., navigate('/about') or scrollTo('#about')
+    };
+
+    const handleServicesClick = () => {
+        console.log('Services clicked');
+        // Add your services navigation logic here
+        // e.g., navigate('/services') or scrollTo('#services')
+    };
+
+    const handleContactClick = () => {
+        console.log('Contact clicked');
+        // Add your contact navigation logic here
+        // e.g., navigate('/contact') or scrollTo('#contact')
+    };
+
     return (
         <header
             className={`fixed top-0 left-0 right-0 transition-all duration-300 ease-in-out z-50 pr-4
@@ -58,17 +83,30 @@ const Header: React.FC = () => {
 
                 <ul className="hidden sm:flex space-x-4">
                     <li>
-                        <button className="relative px-8 py-2 rounded-xl bg-white isolation-auto z-10 border-2 border-lime-500
+                        <button
+                            onClick={handleHomeClick}
+                            className="relative px-8 py-2 rounded-xl bg-white isolation-auto z-10 border-2 border-lime-500
         before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-lime-500 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700">Home
                         </button>
                     </li>
                     <li>
-                        <button className="relative px-8 py-2 rounded-xl bg-white isolation-auto z-10 border-2 border-lime-500
+                        <button
+                            onClick={handleAboutClick}
+                            className="relative px-8 py-2 rounded-xl bg-white isolation-auto z-10 border-2 border-lime-500
         before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-lime-500 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700">About
                         </button>
                     </li>
                     <li>
-                        <button className="relative px-8 py-2 rounded-xl bg-white isolation-auto z-10 border-2 border-lime-500
+                        <button
+                            onClick={handleServicesClick}
+                            className="relative px-8 py-2 rounded-xl bg-white isolation-auto z-10 border-2 border-lime-500
+        before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-lime-500 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700">Services
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            onClick={handleContactClick}
+                            className="relative px-8 py-2 rounded-xl bg-white isolation-auto z-10 border-2 border-lime-500
         before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-lime-500 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700">Contact
                         </button>
                     </li>
@@ -79,10 +117,38 @@ const Header: React.FC = () => {
             {state.isMenuOpen && (
                 <div className="sm:hidden absolute top-full left-0 w-full bg-white shadow-md">
                     <ul className="flex flex-col items-center py-4">
-                        <li className="py-2"><span className="hover:text-gray-300 cursor-pointer">Home</span></li>
-                        <li className="py-2"><span className="hover:text-gray-300 cursor-pointer">About</span></li>
-                        <li className="py-2"><span className="hover:text-gray-300 cursor-pointer">Services</span></li>
-                        <li className="py-2"><span className="hover:text-gray-300 cursor-pointer">Contact</span></li>
+                        <li className="py-2">
+                            <span
+                                className="hover:text-gray-300 cursor-pointer"
+                                onClick={handleHomeClick}
+                            >
+                                Home
+                            </span>
+                        </li>
+                        <li className="py-2">
+                            <span
+                                className="hover:text-gray-300 cursor-pointer"
+                                onClick={handleAboutClick}
+                            >
+                                About
+                            </span>
+                        </li>
+                        <li className="py-2">
+                            <span
+                                className="hover:text-gray-300 cursor-pointer"
+                                onClick={handleServicesClick}
+                            >
+                                Services
+                            </span>
+                        </li>
+                        <li className="py-2">
+                            <span
+                                className="hover:text-gray-300 cursor-pointer"
+                                onClick={handleContactClick}
+                            >
+                                Contact
+                            </span>
+                        </li>
                     </ul>
                 </div>
             )}
